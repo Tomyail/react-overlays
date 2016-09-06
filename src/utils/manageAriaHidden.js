@@ -37,10 +37,10 @@ export function ariaHidden(show, node, classStyles){
   }
 }
 
-export function hideSiblings(container, mountNode){
+export function hideSiblings(container, mountNode, styles){
   siblings(container, mountNode, styles, (node, style) => ariaHidden(true, node, styles));
 }
 
-export function showSiblings(container, mountNode){
+export function showSiblings(container, mountNode, styles){
   siblings(container, mountNode, styles, (node, style) => ariaHidden(false, node, styles));
 }
