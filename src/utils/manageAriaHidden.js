@@ -21,7 +21,15 @@ export function ariaHidden(show, node, classStyles){
 
   if (show) {
     node.setAttribute('aria-hidden', 'true');
-    node.setAttribute('class', classStyles);
+
+    var nodeClass = node.getAttribute('class');
+    if (nodeClass) {
+      nodeClass += ' ' + classStyles;
+    }
+    else {
+      nodeClass = classStyles;
+    }
+    node.setAttribute('class', nodeClass);
   }
   else {
     node.removeAttribute('aria-hidden');
@@ -30,9 +38,9 @@ export function ariaHidden(show, node, classStyles){
 }
 
 export function hideSiblings(container, mountNode){
-  siblings(container, mountNode, node => ariaHidden(true, node));
+  siblings(container, mountNode, styles, (node, style) => ariaHidden(true, node, styles));
 }
 
 export function showSiblings(container, mountNode){
-  siblings(container, mountNode, node => ariaHidden(false, node));
+  siblings(container, mountNode, styles, (node, style) => ariaHidden(false, node, styles));
 }
