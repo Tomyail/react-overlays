@@ -43,6 +43,10 @@ const Modal = React.createClass({
     ...Portal.propTypes,
 
     /**
+     * children styles
+     */
+    styleNames:React.PropTypes.string,
+    /**
      * Set the visibility of the Modal
      */
     show: React.PropTypes.bool,
@@ -340,7 +344,7 @@ const Modal = React.createClass({
     let doc = ownerDocument(this);
     let container = getContainer(this.props.container, doc.body);
 
-    modalManager.add(this, container, this.props.containerClassName);
+    modalManager.add(this, container, this.props.containerClassName, this.props.styleNames);
 
     this._onDocumentKeyupListener =
       addEventListener(doc, 'keyup', this.handleDocumentKeyUp);
