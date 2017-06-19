@@ -1,8 +1,10 @@
+import css from 'dom-helpers/style';
+import getScrollbarSize from 'dom-helpers/util/scrollbarSize';
+
 import Modal from '../src/Modal';
 import ModalManager from '../src/ModalManager';
+
 import { injectCss } from './helpers';
-import getScrollbarSize from 'dom-helpers/util/scrollbarSize';
-import css from 'dom-helpers/style';
 
 describe('ModalManager', ()=> {
   let container, manager;
@@ -181,6 +183,17 @@ describe('ModalManager', ()=> {
       manager.add(modal, container);
 
       expect(container.style.overflow).to.equal('hidden');
+    });
+
+    it('should respect handleContainerOverflow', ()=>{
+      let modal = new Modal({});
+
+      expect(container.style.overflow).to.equal('');
+
+      new ModalManager({ handleContainerOverflow: false })
+        .add(modal, container);
+
+      expect(container.style.overflow).to.equal('');
     });
 
     it('should set add to existing container padding', ()=>{

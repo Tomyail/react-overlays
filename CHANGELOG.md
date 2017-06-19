@@ -1,3 +1,63 @@
+## [v0.6.12]
+> 2017-03-06
+
+- **Feature:** Add `mountOnEnter` to `<Transition>` ([#144])
+- **Feature:** Add `restoreFocus` to `<Modal>` ([#145])
+
+[v0.6.12]: https://github.com/react-bootstrap/react-overlays/compare/v0.6.11...v0.6.12
+[#144]: https://github.com/react-bootstrap/react-overlays/pull/144
+[#145]: https://github.com/react-bootstrap/react-overlays/pull/145
+
+
+## [v0.6.11]
+> 2017-02-13
+
+- **Feature:** Allow accessibility attributes on `<Modal>` root element ([#114])
+- **Feature:** Expose triggering event in `onRootClose` callback ([#142])
+
+[v0.6.11]: https://github.com/react-bootstrap/react-overlays/compare/v0.6.10...v0.6.11
+[#114]: https://github.com/react-bootstrap/react-overlays/pull/114
+[#142]: https://github.com/react-bootstrap/react-overlays/pull/142
+
+
+## [v0.6.10]
+> 2016-10-03
+
+- **Bugfix:** Don't fire `onRootClose` in capture phase to avoid race conditions with React events ([#118])
+
+[v0.6.10]: https://github.com/react-bootstrap/react-overlays/compare/v0.6.9...v0.6.10
+[#118]: https://github.com/react-bootstrap/react-overlays/pull/118
+
+
+## [v0.6.9]
+> 2016-10-01
+
+- **Bugfix:** Don't spuriously trigger `onRootClose` when React event handler unmounts event target ([#117])
+
+[v0.6.9]: https://github.com/react-bootstrap/react-overlays/compare/v0.6.8...v0.6.9
+[#117]: https://github.com/react-bootstrap/react-overlays/pull/117
+
+
+## [v0.6.8]
+> 2016-09-30
+
+- **Feature:** Remove wrapping DOM element in `<RootCloseWrapper>` ([#116])
+- **Bugfix:** Do not bind listeners for `<RootCloseWrapper>` when `disabled` is set ([#116])
+
+[v0.6.8]: https://github.com/react-bootstrap/react-overlays/compare/v0.6.7...v0.6.8
+[#116]: https://github.com/react-bootstrap/react-overlays/pull/116
+
+
+## [v0.6.7]
+> 2016-09-29
+
+- **Feature:** Allow opt-out of `<Modal>` container styling ([#113])
+- **Feature:** Add `renderBackdrop` to `<Modal>` ([#113])
+
+[v0.6.7]: https://github.com/react-bootstrap/react-overlays/compare/v0.6.6...v0.6.7
+[#113]: https://github.com/react-bootstrap/react-overlays/pull/113
+
+
 ## [v0.6.6]
 > 2016-08-01
 
@@ -56,7 +116,7 @@
 
 - **Bugfix:** Flush new props to DOM before initiating transitions ([#60])
 - **Bugfix:** Update `<Portal>` container node when `container` prop changes ([#66])
-- **Bugfix:** Don't invooke close in `<RootCloseWrapper>` on right clicks ([#69])
+- **Bugfix:** Don't invoke close in `<RootCloseWrapper>` on right clicks ([#69])
 
 [v0.6.1]: https://github.com/react-bootstrap/react-overlays/compare/v0.6.0...v0.6.1
 [#60]: https://github.com/react-bootstrap/react-overlays/pull/60

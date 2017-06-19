@@ -1,8 +1,10 @@
-import css from 'dom-helpers/style';
 import classes from 'dom-helpers/class';
+import css from 'dom-helpers/style';
 import getScrollbarSize from 'dom-helpers/util/scrollbarSize';
+
 import isOverflowing from './utils/isOverflowing';
-import { hideSiblings, showSiblings, ariaHidden } from './utils/manageAriaHidden';
+import { ariaHidden, hideSiblings, showSiblings }
+  from './utils/manageAriaHidden';
 
 function findIndexOf(arr, cb){
   let idx = -1;
@@ -20,6 +22,32 @@ function findContainer(data, modal) {
     d => d.modals.indexOf(modal) !== -1);
 }
 
+function setContainerStyle(state, container) {
+  let style = { overflow: 'hidden' };
+
+  // we are only interested in the actual `style` here
+  // becasue we will override it
+  state.style = {
+    overflow: container.style.overflow,
+    paddingRight: container.style.paddingRight
+  }
+
+  if (state.overflowing) {
+    // use computed style, here to get the real padding
+    // to add our scrollbar width
+    style.paddingRight =
+      parseInt(css(container, 'paddingRight') || 0, 10) + getScrollbarSize() + 'px';
+  }
+
+  css(container, style);
+}
+
+function removeContainerStyle({ style }, container) {
+
+  Object.keys(style).forEach(
+    key => container.style[key] = style[key]);
+
+}
 /**
  * Proper state managment for containers and the modals in those containers.
  *
@@ -27,14 +55,19 @@ function findContainer(data, modal) {
  */
 class ModalManager {
 
-  constructor(hideSiblingNodes = true){
+  constructor({ hideSiblingNodes = true, handleContainerOverflow = true } = {}) {
     this.hideSiblingNodes = hideSiblingNodes;
+    this.handleContainerOverflow = handleContainerOverflow;
     this.modals = [];
     this.containers = [];
     this.data = [];
   }
 
+<<<<<<< HEAD
   add(modal, container, className, styleNames){
+=======
+  add = (modal, container, className) => {
+>>>>>>> upstream/master
     let modalIdx = this.modals.indexOf(modal);
     let containerIdx = this.containers.indexOf(container);
 
@@ -58,25 +91,13 @@ class ModalManager {
       modals: [ modal ],
       //right now only the first modal of a container will have its classes applied
       classes: className ? className.split(/\s+/) : [],
-      //we are only interested in the actual `style` here becasue we will override it
-      style: {
-        overflow: container.style.overflow,
-        paddingRight: container.style.paddingRight
-      }
+
+      overflowing: isOverflowing(container)
     };
 
-    let style = { overflow: 'hidden' };
-
-    data.overflowing = isOverflowing(container);
-
-    if (data.overflowing) {
-      // use computed style, here to get the real padding
-      // to add our scrollbar width
-      style.paddingRight =
-        parseInt(css(container, 'paddingRight') || 0, 10) + getScrollbarSize() + 'px';
+    if (this.handleContainerOverflow) {
+      setContainerStyle(data, container)
     }
-
-    css(container, style);
 
     data.classes.forEach(
       classes.addClass.bind(null, container));
@@ -87,7 +108,7 @@ class ModalManager {
     return modalIdx;
   }
 
-  remove(modal){
+  remove = (modal) => {
     let modalIdx = this.modals.indexOf(modal);
 
     if (modalIdx === -1) {
@@ -104,13 +125,14 @@ class ModalManager {
     this.modals.splice(modalIdx, 1);
 
     // if that was the last modal in a container,
-    // clean up the container stylinhg.
+    // clean up the container
     if (data.modals.length === 0){
-      Object.keys(data.style).forEach(
-        key => container.style[key] = data.style[key]);
-
       data.classes.forEach(
         classes.removeClass.bind(null, container));
+
+      if (this.handleContainerOverflow) {
+        removeContainerStyle(data, container)
+      }
 
       if (this.hideSiblingNodes) {
         showSiblings(container, modal.mountNode);
@@ -124,7 +146,7 @@ class ModalManager {
     }
   }
 
-  isTopModal(modal) {
+  isTopModal = (modal) => {
     return !!this.modals.length
         && this.modals[this.modals.length - 1] === modal;
   }
