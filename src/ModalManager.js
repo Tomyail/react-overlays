@@ -63,11 +63,7 @@ class ModalManager {
     this.data = [];
   }
 
-<<<<<<< HEAD
-  add(modal, container, className, styleNames){
-=======
-  add = (modal, container, className) => {
->>>>>>> upstream/master
+  add = (modal, container, className, styleNames) => {
     let modalIdx = this.modals.indexOf(modal);
     let containerIdx = this.containers.indexOf(container);
 

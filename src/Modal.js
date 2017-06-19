@@ -386,11 +386,7 @@ class Modal extends React.Component {
     let doc = ownerDocument(this);
     let container = getContainer(this.props.container, doc.body);
 
-<<<<<<< HEAD
-    modalManager.add(this, container, this.props.containerClassName, this.props.styleNames);
-=======
-    this.props.manager.add(this, container, this.props.containerClassName);
->>>>>>> upstream/master
+    this.props.manager.add(this, container, this.props.containerClassName, this.props.styleNames);
 
     this._onDocumentKeyupListener =
       addEventListener(doc, 'keyup', this.handleDocumentKeyUp);
