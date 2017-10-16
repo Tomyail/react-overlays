@@ -2,64 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd32c8bc-7141-4532-b59e-d3e6b2bcd78a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CHANGELOG.md" afterPath="$PROJECT_DIR$/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codecov.yml" afterPath="$PROJECT_DIR$/codecov.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/.eslintrc" afterPath="$PROJECT_DIR$/examples/.eslintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/Affix.js" afterPath="$PROJECT_DIR$/examples/Affix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/App.js" afterPath="$PROJECT_DIR$/examples/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/Modal.js" afterPath="$PROJECT_DIR$/examples/Modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/Overlay.js" afterPath="$PROJECT_DIR$/examples/Overlay.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/Portal.js" afterPath="$PROJECT_DIR$/examples/Portal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/Position.js" afterPath="$PROJECT_DIR$/examples/Position.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/PropTable.js" afterPath="$PROJECT_DIR$/examples/PropTable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/RootCloseWrapper.js" afterPath="$PROJECT_DIR$/examples/RootCloseWrapper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/Transition.js" afterPath="$PROJECT_DIR$/examples/Transition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/index.html" afterPath="$PROJECT_DIR$/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/injectCss.js" afterPath="$PROJECT_DIR$/examples/injectCss.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/styles.less" afterPath="$PROJECT_DIR$/examples/styles.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/karma.conf.js" afterPath="$PROJECT_DIR$/karma.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Affix.js" afterPath="$PROJECT_DIR$/src/Affix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AutoAffix.js" afterPath="$PROJECT_DIR$/src/AutoAffix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Modal.js" afterPath="$PROJECT_DIR$/src/Modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ModalManager.js" afterPath="$PROJECT_DIR$/src/ModalManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Overlay.js" afterPath="$PROJECT_DIR$/src/Overlay.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Portal.js" afterPath="$PROJECT_DIR$/src/Portal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Position.js" afterPath="$PROJECT_DIR$/src/Position.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RootCloseWrapper.js" afterPath="$PROJECT_DIR$/src/RootCloseWrapper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Transition.js" afterPath="$PROJECT_DIR$/src/Transition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/addEventListener.js" afterPath="$PROJECT_DIR$/src/utils/addEventListener.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/addFocusListener.js" afterPath="$PROJECT_DIR$/src/utils/addFocusListener.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/calculatePosition.js" afterPath="$PROJECT_DIR$/src/utils/calculatePosition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/createChainedFunction.js" afterPath="$PROJECT_DIR$/src/utils/createChainedFunction.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/getContainer.js" afterPath="$PROJECT_DIR$/src/utils/getContainer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/getDocumentHeight.js" afterPath="$PROJECT_DIR$/src/utils/getDocumentHeight.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/isOverflowing.js" afterPath="$PROJECT_DIR$/src/utils/isOverflowing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/manageAriaHidden.js" afterPath="$PROJECT_DIR$/src/utils/manageAriaHidden.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/ownerDocument.js" afterPath="$PROJECT_DIR$/src/utils/ownerDocument.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/ownerWindow.js" afterPath="$PROJECT_DIR$/src/utils/ownerWindow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/.eslintrc" afterPath="$PROJECT_DIR$/test/.eslintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/AffixSpec.js" afterPath="$PROJECT_DIR$/test/AffixSpec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/AutoAffixSpec.js" afterPath="$PROJECT_DIR$/test/AutoAffixSpec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ModalManagerSpec.js" afterPath="$PROJECT_DIR$/test/ModalManagerSpec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ModalSpec.js" afterPath="$PROJECT_DIR$/test/ModalSpec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/PortalSpec.js" afterPath="$PROJECT_DIR$/test/PortalSpec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/PositionSpec.js" afterPath="$PROJECT_DIR$/test/PositionSpec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/RootCloseWrapperSpec.js" afterPath="$PROJECT_DIR$/test/RootCloseWrapperSpec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/TransitionSpec.js" afterPath="$PROJECT_DIR$/test/TransitionSpec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helpers.js" afterPath="$PROJECT_DIR$/test/helpers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/index.js" afterPath="$PROJECT_DIR$/test/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack/docs.config.js" afterPath="$PROJECT_DIR$/webpack/docs.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack/example-loader.js" afterPath="$PROJECT_DIR$/webpack/example-loader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack/examples.config.js" afterPath="$PROJECT_DIR$/webpack/examples.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -84,6 +27,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-1869" />
@@ -153,12 +99,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1508139475828</updated>
-      <workItem from="1508139477041" duration="202000" />
+      <workItem from="1508139477041" duration="716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="202000" />
+    <option name="totallyTimeSpent" value="716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1869" y="-133" width="1584" height="1057" extended-state="0" />
@@ -184,6 +130,11 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/node_modules/karma/config.tpl.js" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
