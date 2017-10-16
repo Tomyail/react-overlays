@@ -63,7 +63,7 @@ class ModalManager {
     this.data = [];
   }
 
-  add = (modal, container, className, styleNames) => {
+  add = (modal, container, className) => {
     let modalIdx = this.modals.indexOf(modal);
     let containerIdx = this.containers.indexOf(container);
 
@@ -75,7 +75,7 @@ class ModalManager {
     this.modals.push(modal);
 
     if (this.hideSiblingNodes) {
-      hideSiblings(container, modal.mountNode, styleNames);
+      hideSiblings(container, modal.mountNode);
     }
 
     if (containerIdx !== -1) {
